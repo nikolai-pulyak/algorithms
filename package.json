@@ -1,0 +1,29 @@
+{
+  "name": "algorithms",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.ts",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://nikolai-pulyak@github.com/nikolai-pulyak/algorithms.git"
+  },
+  "author": "Nikolay Puliak",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nikolai-pulyak/algorithms/issues"
+  },
+  "homepage": "https://github.com/nikolai-pulyak/algorithms#readme",
+  "devDependencies": {
+    "@types/chai": "^4.3.0",
+    "@types/mocha": "^9.0.0",
+    "@types/node": "^17.0.10",
+    "chai": "^4.3.4",
+    "ts-node": "^10.4.0"
+  },
+  "dependencies": {
+    "typescript": "^4.5.4"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "extension": ["ts"],
+  "spec": [
+    "app/test/modules/**/*.test.ts",
+    "general/test/**/*.test.ts"
+  ],
+  "ignore": ["client", "node_modules"],
+  "watch-ignore": ["client", "node_modules"],
+  "require": "ts-node/register",
+  "delay": false,
+  "bail": true,
+  "watch": true
+}
