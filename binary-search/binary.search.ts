@@ -1,8 +1,9 @@
 type ItemType = string|number
-export function binarySearch(arr: ItemType[], val: ItemType[]): number {
-  let maxIndex = arr.length - 1, minIndex = 0, middIndex = -1, midd
+export function binarySearch(arr: ItemType[], val: ItemType): number {
+  let maxIndex = arr.length - 1, minIndex = 0, midd
+  let middIndex = Math.floor(maxIndex / 2 + minIndex / 2)
+  
   while(maxIndex > middIndex) {
-    middIndex = Math.floor(maxIndex / 2 + minIndex / 2)
     midd = arr[middIndex]
     
     if(midd === val)
@@ -12,6 +13,8 @@ export function binarySearch(arr: ItemType[], val: ItemType[]): number {
       minIndex = middIndex + 1
     else
       maxIndex = middIndex - 1
+  
+    middIndex = Math.floor(maxIndex / 2 + minIndex / 2)
   }
-  return -1
+  return arr[middIndex] === val ? middIndex : -1
 }
